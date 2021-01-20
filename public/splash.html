@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Splash Screen | Mastermind</title>
+  </head>
+  <body>
+    <main>
+
+      <section id="top">
+        <h1>MASTERMIND</h1>
+      </section>
+
+      <section id="bottom">
+        <div class="howToPlay">
+          <h2>How-To-Play</h2>
+          <p>In mastermind there are two players. One player makes a four pegged code using 6 differently colored pegs. Pegs can be used multiple times.</p>
+          <p>The other player has ten tries to guess this code. After each guess the player is possibly shown four pegs as feedback to their guessed code.</p>
+          <p>Each blue peg signifies that one of the pegs that the player has inputted is the correct color and in the right place. And each white peg signifies that there is a peg of the correct color, but not in the correct place in the code.</p>
+        </div>
+
+        <div class="statistics">
+          <h2>Statistics</h2>
+          <p>Games Played:</p>
+          <p class="gameTotal"></p>
+          <p>Games in Progress:</p>
+          <p class="currentGames"></p>
+          <p>Codes Guessed:</p>
+          <p class="codesGuessed"></p>
+        </div>
+
+
+        <form action="/play" method="get">
+          <button type="submit">Play</button>
+        </form>
+      </section>
+
+    </main>
+  </body>
+</html>
